@@ -126,3 +126,61 @@ mySet = {
 }
 
 print(f'My set: {mySet}' )
+
+#can do union on these
+
+#converting a list to a set will remove all of the duplicates
+
+##############################################################
+#Tuple
+##############################################################
+
+#immutable
+wiggleTuple = ('car', 'battery', 'apple','Cheese')
+
+print(wiggleTuple[2])
+
+
+##############################################################
+#Loops 
+##############################################################
+
+numbers = [0,1,2,3,4,5,6]
+chars = 'Student'
+
+#for loop
+for num in numbers:
+    print(num)
+    
+for c in chars:
+    print(c)
+    
+for _ in range(5):
+    print(_)
+    
+    
+x = 7
+while x >= 0:
+    print(x)
+    x = x  - 1
+    
+##############################################################
+#List comprehension 
+##############################################################
+
+#we can make the list using these for in range
+numbersList = [x%3+x for x  in range(10)]
+print(f'List comprehension {numbersList}') 
+
+#we can also use strings 
+stringList = [x for x in 'STUDENT']
+print(f'More List Comprehension {stringList}')
+
+#additinally we can add an if to the end good for making sublists of things
+numbersListIf = [x for x  in range(10) if x == 3 in range(10)]
+print(f'List comprehension {numbersListIf}') 
+
+#smaller funcitons
+print(min(numbersList))
+
+print(max(numbersList)
