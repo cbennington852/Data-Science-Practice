@@ -44,7 +44,11 @@ print(df)
 #convert from string to date
 df['job_posted_date'] = pd.to_datetime(df.job_posted_date)
 
-#sorts the values
+#sorts the values by date
 df.sort_values('job_posted_date', inplace=True)
 print(df.job_posted_date)
 
+#drops all of the not a number rows
+df.dropna(subset=['salary_year_avg'], inplace=True)
+
+print(df)
