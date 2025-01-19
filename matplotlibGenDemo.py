@@ -23,6 +23,7 @@ for i, value in enumerate(job_salary.values):
     plt.text(value, i, formatted_salaries[i], va='center')
 
 # Add titles and labels
+plt.style.use('ggplot')
 plt.xlabel('Median Salary')
 plt.ylabel('Job Title')
 plt.title('Median Salary by Job Title')
