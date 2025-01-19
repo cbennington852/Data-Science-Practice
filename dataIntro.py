@@ -28,4 +28,25 @@ for job in data_science_jobs:
     #make the string into an array
     job['job_skills'] = ast.literal_eval(job['job_skills'])
     
-print(data_science_jobs)
+#print(data_science_jobs)
+
+
+
+
+#######################################
+#Data stuff :: numpy
+#######################################
+
+import pandas as pd
+import numpy as np
+import random
+import statistics 
+
+salary_list = np.array([random.randint(50000,100000) for _ in range(1_000_000)])
+print(salary_list)
+
+#print(statistics.mean(salary_list))
+print(salary_list.mean()) # this is faster , much faster
+
+
+
